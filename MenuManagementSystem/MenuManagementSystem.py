@@ -10,7 +10,7 @@ def display_menu():
 def display_item(menu_dict):
     print("\nMenu Items:")
     for item in menu_dict:
-        print(f"Item: {item}, Price: {menu_dict[item]['price']}, Ingredients: {', '.join(menu_dict[item]['ingredients'])}, Calories: {menu_dict[item]['calories']}")
+        print(f"Item: {item}")
     item_name = input("Enter a menu item name: ")
     if item_name in menu_dict:
         print(f"Item: {item_name}, Price: {menu_dict[item_name]['price']}, Ingredients: {', '.join(menu_dict[item_name]['ingredients'])}, Calories: {menu_dict[item_name]['calories']}")
